@@ -1,0 +1,85 @@
+Konsep Website Kasir Penjualan Makanan Ringan
+Website kasir ini dirancang untuk membantu proses penjualan makanan ringan secara modern, cepat, dan efisien. Sistem mendukung pengelolaan produk, transaksi, laporan penjualan, serta manajemen stok menggunakan database Supabase.
+Tujuan Website
+•	Mencatat transaksi penjualan secara otomatis
+•	Mengelola stok makanan ringan
+•	Melihat laporan penjualan harian dan bulanan
+•	Mempermudah pelayanan pelanggan
+•	Memonitor performa bisnis secara realtime
+Fitur Utama
+•	Login Admin dan Kasir
+•	Dashboard Penjualan
+•	Transaksi Kasir
+•	Manajemen Produk
+•	Manajemen Stok
+•	Laporan Penjualan
+•	Cetak Struk
+•	Pembayaran QRIS dan Tunai
+Konsep Desain UI/UX
+•	Desain modern dan minimalis
+•	Menggunakan warna orange, putih, dan dark gray
+•	Responsive untuk desktop, tablet, dan mobile
+•	Menggunakan card produk dengan gambar snack
+•	Navigasi sidebar modern
+Halaman Dashboard
+•	Total penjualan hari ini
+•	Jumlah transaksi
+•	Produk terlaris
+•	Stok hampir habis
+•	Grafik penjualan
+Halaman Transaksi
+•	Menampilkan daftar produk snack
+•	Pencarian produk
+•	Keranjang belanja otomatis
+•	Perhitungan total otomatis
+•	Pilih metode pembayaran
+•	Cetak struk transaksi
+Halaman Kelola Produk
+•	Tambah produk
+•	Edit produk
+•	Hapus produk
+•	Upload gambar produk
+•	Kategori produk
+Teknologi yang Digunakan
+•	Frontend: React.js + Tailwind CSS
+•	Backend: Node.js / Supabase API
+•	Database: Supabase PostgreSQL
+•	Authentication: Supabase Auth
+•	Storage Gambar: Supabase Storage
+Struktur Database Supabase
+Table: users
+Field
+id
+username
+password
+role
+Table: products
+Field
+id
+nama_produk
+harga
+stok
+kategori
+gambar_url
+Table: transactions
+Field
+id
+tanggal
+total
+metode_pembayaran
+Table: transaction_items
+Field
+id
+transaction_id
+product_id
+qty
+subtotal
+Fitur Tambahan (Opsional)
+•	Scan barcode produk
+•	Dark mode
+•	Export laporan PDF/Excel
+•	Multi kasir
+•	Sistem promo dan voucher
+•	Dashboard owner
+Kesimpulan
+Website kasir ini cocok digunakan untuk UMKM makanan ringan, toko snack, kantin, maupun minimarket kecil. Dengan menggunakan Supabase sebagai database, sistem menjadi lebih modern, realtime, aman, dan mudah dikembangkan.
